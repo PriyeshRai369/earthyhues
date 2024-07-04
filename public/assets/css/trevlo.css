@@ -8807,18 +8807,12 @@ body.megamenu-popup-active .mobile-nav__content {
     display: none;
   }
 
-  .mobtxt {
-    margin-top: 15%;
-  }
 
   .offer-one__img-one {
     width: 300px;
     height: 300px;
   }
 
-  .main-slider-three__image {
-    width: 100% !important;
-  }
 
   .main-slider-three__content {
     margin-top: 10rem !important;
@@ -16655,9 +16649,9 @@ body.megamenu-popup-active .mobile-nav__content {
   left: 8%;
 }
 
-@media (max-width:480px) {
+@media (max-width:767px) {
   .main-slider-three__content {
-    display: none;
+    left: 18%;
   }
 }
 
@@ -16696,10 +16690,10 @@ body.megamenu-popup-active .mobile-nav__content {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 668px) {
   .main-slider-three .banner-form {
     /* margin-top: 50px; */
-    margin-top: 80%;
+    margin-top: 92%;
   }
 }
 
@@ -16728,7 +16722,7 @@ body.megamenu-popup-active .mobile-nav__content {
   right: 0;
   top: 0;
   width: 60%;
-  height: 767px;
+  /* height: 767px; */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17636,9 +17630,25 @@ body.boxed-wrapper .main-header__booking-btn {
 
 @media (max-width:768px) {
   .content {
-    top: 50px;
+    top: 200px;
+    color: black;
+
   }
 }
+@media (max-width:668px) {
+  .content {
+    top: 260px;
+    color: black;
+
+  }
+}
+/* @media (max-width:480px) {
+  .content {
+    top: 220px;
+    color: black;
+
+  }
+} */
 
 .content__container {
   font-weight: 600;
@@ -17981,8 +17991,36 @@ select.selectpicker1 {
 } */
 
 .bdrRdr {
-  border-radius: 0 0 0 55px;
+  height: 600px;
+
+  ul{
+    height: 100%;
+  }
 }
+
+@media (max-width:992px) {
+  .bdrRdr{
+    height: 450px;
+  }
+}
+
+@media (max-width:768px) {
+  .bdrRdr{
+    height: 350px;
+  }
+}
+@media (max-width:668px) {
+  .bdrRdr{
+    height: 400px;
+  }
+  .main-slider-three__image {
+    width: 100% !important;
+  }
+  .main-slider-three__content {
+    display: none;
+}
+}
+
 
 .social-media {
   /* background: rgba(11, 11, 11, 0.48); */
@@ -18010,6 +18048,18 @@ select.selectpicker1 {
       transition: color .4s linear;
       color: #06a3b7;
     }
+  }
+}
+
+@media (max-width:480px) {
+  .social-media a{
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+  }
+  .main-slider-three__title{
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -18153,6 +18203,81 @@ select.selectpicker1 {
   }
 }
 
+.h1Title{
+  font-size: 50px;
+}
+
+@media (max-width:768px) {
+  .h1Title{
+    font-size: 30px;
+  }
+}
+
+@media (max-width:992px) {
+  .imgContainer{
+    width: 380px;
+    height: 255px;
+  }
+}
+
+@media (max-width:410px) {
+  .imgContainer{
+    width: 350px;
+    height: 200px;
+  }
+}
+
+
+
 .pageHeading{
   font-size: 20px;
+}
+.icon-bar {
+  position: fixed;
+  /* left: ; */
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99999999999;
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.instagram {
+  background: #E1306C;
+  color: white;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
 }

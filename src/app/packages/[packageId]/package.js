@@ -48,37 +48,7 @@ const PackageDetail = ({ dest }) => {
                     <div className="container">
                         {/* {data.map((item) => ( */}
                         <div className="tour-listing-details__row row testdest">
-                            <div className="col-xl-4 rightsidediv imgContainer">
 
-                                <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src={data.package_img} class="d-block" alt="..." />
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src={data.gallery?.[0]?.large_image} class="d-block" alt="..." />
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src={data.gallery?.[1]?.large_image} class="d-block" alt="..." />
-                                        </div>
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
-                                </div>
-                                {/* <aside className="tour-listing-details__sidebar mobaside"> */}
-                                {/* <div className="tour-listing-details__sidebar-book-tours    tour-listing-details__sidebar-single wow animated fadeInUp text-center"
-                                        data-wow-delay="0.1s" data-wow-duration="1500ms">
-                                        <img src={data.package_img} alt="image" className='w-100' />
-                                        <div className="result" />
-                                    </div> */}
-                                {/* </aside> */}
-                            </div>
                             <div className="">
                                 <div className="tour-listing-details__overview">
                                     <div
@@ -86,10 +56,33 @@ const PackageDetail = ({ dest }) => {
                                         data-wow-delay="0.1s"
                                         data-wow-duration="1500ms"
                                     >
-                                        <h3 className="tour-listing-details__title tour-listing-details__overview-title font-bernadette-rough display-4" style={{fontSize:"50px"}}>
+                                        <h3 className=" h1Title tour-listing-details__title tour-listing-details__overview-title font-bernadette-rough display-4">
                                             {/* Spectacles of the Thar */}
                                             {data.package_title}
                                         </h3>
+                                    </div>
+                                    <div className="col-xl-4 rightsidediv imgContainer">
+                                        <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                    <img src={data.package_img} class="d-block" alt="..." />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src={data.gallery?.[0]?.large_image} class="d-block" alt="..." />
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img src={data.gallery?.[1]?.large_image} class="d-block" alt="..." />
+                                                </div>
+                                            </div>
+                                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Previous</span>
+                                            </button>
+                                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Next</span>
+                                            </button>
+                                        </div>
                                     </div>
                                     <h1 className='pageHeading animated fadeInUp'>{data.package_title}Travel Package by EarthyHues</h1>
                                     <p

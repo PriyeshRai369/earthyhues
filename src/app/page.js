@@ -8,6 +8,7 @@ import Link from "next/link";
 import Testmonial from "@/components/Testmonial/Testmonial";
 import HomeBlog from "@/components/HomeBlog/HomeBlog";
 import jQuery from "jquery";
+import SocialMedia from "@/components/SocialMedia/SocialMedia";
 
 export default function Home() {
   return (

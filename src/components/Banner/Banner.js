@@ -114,16 +114,16 @@ const Banner = () => {
                             containerClass='bdrRdr'
                         >
                             {data.map((item) => (
-                                <div className="item mobile" key={item.banner_id}>
-                                    <div
-                                        className="main-slider-one__image"
-                                        style={{
-                                            backgroundImage: `url(${item.small})`,
-                                            borderRadius: "0 0 0 55px",
-
-                                        }}
-                                    />
-                                </div>
+                                    <img src={item.small} alt=""  style={{width:"100%",height:"100%"}}/>
+                                // <div className="item mobile" key={item.banner_id}>
+                                //     <div
+                                //         className="main-slider-one__image"
+                                //         style={{
+                                //             backgroundImage: `url(${item.small})`,
+                                //             borderRadius: "0 0 0 55px",
+                                //         }}
+                                //     />
+                                // </div>
                             ))}
                         </Carousel>
 
@@ -132,7 +132,7 @@ const Banner = () => {
                         <div className="container">
                             <div className="main-slider-one__content">
 
-                                <div className="content w-100 my-5">
+                                <div className="content w-100">
                                     <div class="w-100">
 
                                         <div className="d-flex justify-content-center mobtxt">
