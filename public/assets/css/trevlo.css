@@ -16638,7 +16638,7 @@ body.megamenu-popup-active .mobile-nav__content {
 @media (min-width: 1200px) {
   .main-slider-three>.container {
     max-width: 100%;
-    padding-left: 12%;
+    padding-left: 7%;
   }
 }
 
@@ -16656,11 +16656,11 @@ body.megamenu-popup-active .mobile-nav__content {
 
 .main-slider-three__content {
   position: relative;
-  display: flex;
+  /* display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   left: 8%;
 }
 
