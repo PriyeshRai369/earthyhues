@@ -113,16 +113,11 @@ const Banner = () => {
                             arrows={false}
                             containerClass='bdrRdr'
                         >
-                            {data.map((item) => (
-                                    <img src={item.small} alt=""  style={{width:"100%",height:"100%"}}/>
+                            {data.map((item) => (    
+                                    <div className="main-slider-one__image">
+                                        <img src={item.small} alt=""  style={{width:"100%",height:"100%"}}/>
+                                    </div>
                                 // <div className="item mobile" key={item.banner_id}>
-                                //     <div
-                                //         className="main-slider-one__image"
-                                //         style={{
-                                //             backgroundImage: `url(${item.small})`,
-                                //             borderRadius: "0 0 0 55px",
-                                //         }}
-                                //     />
                                 // </div>
                             ))}
                         </Carousel>
@@ -133,10 +128,10 @@ const Banner = () => {
                             <div className="main-slider-one__content">
 
                                 <div className="content w-100">
-                                    <div class="w-100">
+                                    <div class="w-100 mb-4">
 
-                                        <div className="d-flex justify-content-center mobtxt">
-                                            <span className='display-4 main-slider-three__title'> Find Your&nbsp;</span>&nbsp;
+                                        <div className="mobtxt">
+                                            <span className='display-4 main-slider-three__title spn'>Find your</span>
                                             <Typewriter
                                                 options={{
                                                     strings: cap.map((item) => `<span class="font-bernadette-rough display-4">${item.banner_text}</span>`),

@@ -152,6 +152,7 @@ const FormHome = () => {
                 minDate={nextMonth} // Minimum selectable date
                 maxDate={twelveMonthsLater} // Maximum selectable date
                 required
+                className='border-bottom'
               />
               <i className="icon-calendar-5" />
             </div>
