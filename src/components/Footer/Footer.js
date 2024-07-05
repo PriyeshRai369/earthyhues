@@ -159,10 +159,10 @@ function Footer() {
                                 {/* /.footer-widget__title */}
                                 <ul className="footer-widget__links">
                                     <li>
-                                        <p onClick={() => openModal('destination')} style={{cursor:"pointer" }}>Destinations</p>
+                                        <p onClick={() => openModal('destination')} style={{cursor:"pointer",margin:"0" }}>Destinations</p>
                                     </li>
                                     <li>
-                                        <p onClick={() => openModal('passion')} style={{cursor:"pointer" }}>Passion</p>
+                                        <p onClick={() => openModal('passion')} style={{cursor:"pointer", margin:"0" }}>Passion</p>
                                     </li>
 
                                     <li onClick={scrollToTop}>
