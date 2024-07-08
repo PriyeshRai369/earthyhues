@@ -48,7 +48,7 @@ const About = () => {
                             <div className="about-three__image">
                                 <div className="about-three__image__one trevlo-tilt"
                                     data-tilt-options='{ "glare": false, "maxGlare": 0, "maxTilt": 3, "speed": 700, "scale": 1 }'>
-                                    <img src="assets/images/resources/about-3-1.jpg" alt="trevlo" />
+                                    <img src="assets\images\why-choose\Morning-Tea-earthy-hues-edit.jpg" alt="trevlo" />
                                 </div>
                                 <div className="about-three__image__right wow fadeInUp" data-wow-delay="400ms">
                                 </div>

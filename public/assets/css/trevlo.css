@@ -7526,7 +7526,7 @@ body.megamenu-popup-active .mobile-nav__content {
   background: var(--trevlo-white, #ffffff);
   box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.06);
   max-width: 335px;
-  transform: rotate(6.371deg);
+  transform: rotate(6.371deg)translateY(25px);
   text-align: center;
   margin-left: auto;
   padding: 12px 14px;
