@@ -50,7 +50,7 @@ const Passion = ({ dest }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`https://www.earthyhues.com/newadmin/passions/${passion_id}`);
+                const response = await axios.get(`https://www.banarasialoopapad.in/passions/${passion_id}`);
                 // console.log(response.data);
                 setData(response.data);
                 setDetails(response.data.passion_details)

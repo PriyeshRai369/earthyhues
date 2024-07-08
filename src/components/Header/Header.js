@@ -24,7 +24,7 @@ function Header() {
     };
 
     useEffect(() => {
-        axios.get('https://www.earthyhues.com/newadmin/home-menu')
+        axios.get('https://www.banarasialoopapad.in/home-menu')
             .then((response) => {
                 if (response.data && Array.isArray(response.data)) {
                     // setData(response.data);

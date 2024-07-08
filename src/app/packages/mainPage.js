@@ -11,7 +11,7 @@ function Packages() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get('https://www.earthyhues.com/newadmin/apipackages');
+                const response = await axios.get('https://www.banarasialoopapad.in/apipackages');
                 setData(response.data);
             } catch (error) {
                 console.error('Error fetching Package:', error);

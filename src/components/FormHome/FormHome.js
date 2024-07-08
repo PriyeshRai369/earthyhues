@@ -40,7 +40,7 @@ const FormHome = () => {
     };
 
     useEffect(() => {
-        axios.get('https://www.earthyhues.com/newadmin/home-menu')
+        axios.get('https://www.banarasialoopapad.in/home-menu')
         .then((response) => {
             if (response.data && Array.isArray(response.data)) {
             // setData(response.data);
@@ -83,7 +83,7 @@ const FormHome = () => {
           numTravelers: numTravelers
       };
       // alert(JSON.stringify(formData));
-      axios.post('https://www.earthyhues.com/newadmin/search-form-submit', formData)
+      axios.post('https://www.banarasialoopapad.in/search-form-submit', formData)
           .then((response) => {
               // console.log('Data sent successfully:', response.data);
               // alert(JSON.stringify(response.data))

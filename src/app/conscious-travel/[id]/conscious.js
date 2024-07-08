@@ -11,7 +11,7 @@ const ConsciousDetail = ({ dest }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://www.earthyhues.com/newadmin/api-conscious-travel/${id}`);
+        const response = await axios.get(`https://www.banarasialoopapad.in/api-conscious-travel/${id}`);
         setData(response.data[0]);
         // console.log(response.data[0]);
       } catch (error) {

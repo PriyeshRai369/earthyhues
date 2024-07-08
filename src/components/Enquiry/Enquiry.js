@@ -76,7 +76,7 @@ const Enquiry = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         axios
-            .post('https://www.earthyhues.com/newadmin/enquiry-submit', formData)
+            .post('https://www.banarasialoopapad.in/enquiry-submit', formData)
             .then((response) => {
                 toast.success('Enquiry submitted successfully!');
                 alert(JSON.stringify(response))
