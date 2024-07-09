@@ -18396,3 +18396,49 @@ iframe.youtubeVideo {
     height: 215px;
   }
 }
+.filterSection{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: absolute;
+  top: 140px;
+  right: 100px;
+
+  p{
+    margin: 0 20px;
+    color: #13a5b6;
+  }
+
+
+  select{
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    color:var(--trevlo-secondary, #736D75);
+  }
+}
+
+@media (max-width:1200px) {
+  .filterSection{
+    position: relative;
+    top: 0;
+    right: 0;
+    justify-content: center;
+  }
+}
+
+@media (max-width:435px) {
+  .filterSection{
+    justify-content: center;
+    p{
+      font-size: 15px;
+    }
+    select{
+      width: 125px;
+    }
+  }
+}

@@ -107,6 +107,7 @@ const Passion = ({ dest }) => {
                                         <span className="font-bernadette-rough display-4" style={{ fontSize: 51 }}>
                                             {data.passion_name}
                                         </span>
+                                        
                                     </h3>
                                     <section className='pageContent'>
                                         
