@@ -18442,3 +18442,71 @@ iframe.youtubeVideo {
     }
   }
 }
+.searchSection{
+  position: absolute;
+  top: 140px;
+  right: 100px;
+  width: 350px;
+  height: 45px;
+  /* border: 1px solid black; */
+  background-color: #f3f3f3;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 3px 50px 3px 15px;
+  display: flex;
+
+  input{
+    width: 100%;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+
+  }
+  svg{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    top: 10px;
+
+  }
+}
+
+@media (max-width:992px) {
+  .searchSection{
+    position: relative;
+    margin-top: 30px;
+    top: 0;
+    right: 0;
+  }
+}
+
+.authImgContainer{
+  float: right;
+  width: 300px;
+}
+
+.headingTitle{
+  font-family: bernadette-rough !important;
+    color: #13a5b6;
+}
+.logoAndHeading{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  
+}
+.img-Container{
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-position: right;
+  border: 2px solid #13a5b6;
+
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
