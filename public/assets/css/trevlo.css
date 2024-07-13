@@ -18283,7 +18283,7 @@ select.selectpicker1 {
 .icon-bar {
   position: fixed;
   /* left: ; */
-  right: -55px;
+  right: -58px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -18330,6 +18330,19 @@ select.selectpicker1 {
 .youtube {
   background: #bb0000;
   color: white;
+}
+.tripadvisor {
+  background: #33DB9E;
+  color: white;
+}
+.googleBusiness{
+  background: #ACD1FC;
+}
+.googleBusiness img{
+  width: 25px;
+  height: 25px;
+  padding: 0;
+  margin: 0;
 }
 
 .showIcon {

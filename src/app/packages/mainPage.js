@@ -13,7 +13,7 @@ function Packages() {
     const [destinationList, setDestinationList] = useState({})
     const [filteredData, setFilteredData] = useState([]);
 
-    
+
     const handleChange = (event) => {
         setSelectedPassion(event.target.value);
     };
@@ -102,7 +102,7 @@ function Packages() {
                                             })
                                         }
                                     </select>
-                                    <p>Short by</p>
+                                    <p>Filter</p>
                                     <select value={selectedDestination} onChange={handleDest}>
                                         <option value="">Destinations...</option>
                                         {

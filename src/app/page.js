@@ -1,3 +1,6 @@
+'use client'
+import axios from "axios"
+import { useEffect, useState } from "react"
 import Image from "next/image";
 import Banner from "@/components/Banner/Banner";
 import Upcomingtrip from "@/components/UpcomingTrips/Upcomingtrip";
@@ -5,12 +8,28 @@ import About from "@/components/About/About";
 import VideoHome from "@/components/VideoHome/VideoHome";
 import { scrollToTop } from "@/helper/ScrollToTop";
 import Link from "next/link";
+
 import Testmonial from "@/components/Testmonial/Testmonial";
 import HomeBlog from "@/components/HomeBlog/HomeBlog";
 import jQuery from "jquery";
 import SocialMedia from "@/components/SocialMedia/SocialMedia";
 
 export default function Home() {
+  const [noOfPackage, setNoOfPackage] = useState(0)
+
+    useEffect(() => {
+        async function packageCount() {
+            try {
+                const response = await axios.get('https://www.banarasialoopapad.in/apipackages')
+                setNoOfPackage(response?.data)
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        packageCount()
+    }, [])
+    // console.log(noOfPackage.length);
+  
   return (
     <div className="page-wrapper">
       <Banner />
@@ -35,6 +54,7 @@ export default function Home() {
                 <div className="tour-type__box">
                   <div className="tour-type__box__icon">
                     <span className="icon-windsurfing-2" />
+                    {/* <img src="assets/images/icon/1.png" alt="" /> */}
                   </div>
                   <h3 className="tour-type__box__title">Beach Chill</h3>
                 </div>
@@ -119,7 +139,7 @@ export default function Home() {
                   <span className="count-text" data-stop="1K+" data-speed={1500} />
                   1 K+
                 </h3>
-                <p className="counter-three__box__title">Happy Traveller</p>
+                <p className="counter-three__box__title">No. of travellers</p>
               </div>
             </div>
             {/* /.col-xl-2 col-md-4 */}
@@ -131,9 +151,9 @@ export default function Home() {
                 {/* /.counter-box__icon */}
                 <h3 className="counter-three__box__number count-box">
                   <span className="count-text" data-stop="50+" data-speed={1500} />
-                  50+
+                  {noOfPackage?.length}+
                 </h3>
-                <p className="counter-three__box__title">Eco-friendly</p>
+                <p className="counter-three__box__title">No. of Packages</p>
               </div>
             </div>
             {/* /.col-xl-2 col-md-4 */}
@@ -144,10 +164,10 @@ export default function Home() {
                 </div>
                 {/* /.counter-box__icon */}
                 <h3 className="counter-three__box__number count-box">
-                  <span className="count-text" data-stop="4.9" data-speed={1500} />
-                  4.9
+                  <span className="count-text" data-stop="98%" data-speed={1500} />
+                  98%
                 </h3>
-                <p className="counter-three__box__title">GMB Rating</p>
+                <p className="counter-three__box__title">Google Ranking</p>
               </div>
             </div>
             {/* /.col-xl-2 col-md-4 */}

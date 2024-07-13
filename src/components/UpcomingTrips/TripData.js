@@ -68,9 +68,9 @@ const TripData = () => {
                                                     <p className="tour-type-two__box__back__text">
                                                         {item.upcomingtrip_duration}
                                                     </p>
-                                                    <p className="tour-type-two__box__back__text" dangerouslySetInnerHTML={{ __html: item.cost_per_person_starting_from }}>
+                                                    {/* <p className="tour-type-two__box__back__text" dangerouslySetInnerHTML={{ __html: item.cost_per_person_starting_from }}>
 
-                                                    </p>
+                                                    </p> */}
                                                 </div>
                                             </div>
                                         </div>
