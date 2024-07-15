@@ -18523,3 +18523,27 @@ iframe.youtubeVideo {
     height: 100%;
   }
 }
+
+.formInputs{
+  border: none;
+  border-bottom: 1px solid whitesmoke !important;
+  color: #818181 !important;
+  outline: none !important;
+}
+
+input::placeholder {
+  color: #818181 !important;
+  opacity: 1; 
+}
+.default{
+  display: block;
+}
+.hover{
+  display: none;
+}
+.hoverImg:hover img.default{
+  display: none;
+}
+.hoverImg:hover img.hover{
+  display: block;
+}

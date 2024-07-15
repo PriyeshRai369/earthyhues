@@ -51,22 +51,26 @@ export default function Home() {
           <div className="row">
             <div className="col-xl-3 wow fadeInUp" data-wow-delay="100ms">
               <Link href={`passion/${'beach-chill-698'}`} onClick={scrollToTop}>
-                <div className="tour-type__box">
-                  <div className="tour-type__box__icon">
-                    <span className="icon-windsurfing-2" />
-                    {/* <img src="assets/images/icon/1.png" alt="" /> */}
+                <div className="tour-type__box hoverImg">
+                  <div className="tour-type__box__icon ">
+                    {/* <span className="icon-windsurfing-2" /> */}
+                    {/* <div className="tourIcon"></div> */}
+                    <img src="assets/images/icon/2.png" alt="" className="default"/>
+                    <img src="assets/images/icon/1.png" alt="" className="hover"/>
                   </div>
-                  <h3 className="tour-type__box__title">Beach Chill</h3>
+                  <h3 className="tour-type__box__title">Family Vacation</h3>
                 </div>
               </Link>
             </div>
             <div className="col-xl-3 wow fadeInUp" data-wow-delay="150ms">
               <Link href={`passion/${'water-sports-705'}`} onClick={scrollToTop}>
-                <div className="tour-type__box">
+                <div className="tour-type__box hoverImg">
                   <div className="tour-type__box__icon">
-                    <span className="icon-paragliding-5" />
+                    {/* <span className="icon-paragliding-5" /> */}
+                    <img src="assets/images/icon/8.png" alt="" className="default"/>
+                    <img src="assets/images/icon/7.png" alt="" className="hover"/>
                   </div>
-                  <h3 className="tour-type__box__title">Water Sport</h3>
+                  <h3 className="tour-type__box__title">Corporate</h3>
                 </div>
               </Link>
             </div>
@@ -76,18 +80,20 @@ export default function Home() {
                   <div className="tour-type__box__icon">
                     <span className="icon-hiking-4" />
                   </div>
-                  <h3 className="tour-type__box__title">Little Wanderer</h3>
+                  <h3 className="tour-type__box__title">Adventure Tours</h3>
                 </div>
               </Link>
             </div>
             <div className="col-xl-3 wow fadeInUp" data-wow-delay="250ms">
               <Link href={`passion/${'birding-699'}`} onClick={scrollToTop}>
-                <div className="tour-type__box">
+                <div className="tour-type__box hoverImg">
                   <div className="tour-type__box__icon">
                     {/* <span className="icon-hang-gliding-3" /> */}
-                    <span className="icon-wildlife" />
+                    {/* <span className="icon-wildlife" /> */}
+                    <img src="assets/images/icon/4.png" alt="" className="default"/>
+                    <img src="assets/images/icon/9.png" alt="" className="hover"/>
                   </div>
-                  <h3 className="tour-type__box__title">Birding</h3>
+                  <h3 className="tour-type__box__title">Sustainable</h3>
                 </div>
               </Link>
             </div>
@@ -95,7 +101,7 @@ export default function Home() {
               <Link href={`passion/${'wildlife-16'}`} onClick={scrollToTop}>
                 <div className="tour-type__box">
                   <div className="tour-type__box__icon">
-                    <span className="icon-deer-silhouette-1" />
+                  <span className="icon-wildlife" />
                   </div>
                   <h3 className="tour-type__box__title">Wildlife</h3>
                 </div>
