@@ -6620,7 +6620,7 @@ body.megamenu-popup-active .mobile-nav__content {
 
 @media (min-width: 480px) and (max-width: 992px) {
   .page-header {
-    padding: 180px 0 40px;
+    padding: 140px 0 40px;
   }
 }
 
@@ -18417,6 +18417,7 @@ iframe.youtubeVideo {
   position: absolute;
   top: 140px;
   right: 100px;
+  gap: 10px;
 
   p{
     margin: 0 20px;

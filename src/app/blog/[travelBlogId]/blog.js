@@ -45,7 +45,7 @@ const TravelBlogDetail = ({dest}) => {
             </div> */}
         </section>
         {loading?<Loading/>:
-            <section className="mt-5">
+            <section className="mt-3">
                 <div className="container">
                     <div className="tour-listing-details__row row">
                     {/* <div className="col-xl-4">
@@ -64,10 +64,10 @@ const TravelBlogDetail = ({dest}) => {
                             data-wow-delay="0.1s"
                             data-wow-duration="1500ms"
                         >
-                            <h1 className="tour-listing-details__title tour-listing-details__overview-title ">
+                            <h5  className='font-bernadette-rough display-6' style={{fontWeight:"normal"}}>{data.sub_heading_name}</h5>
+                            <h1 style={{padding:"0",fontSize:"x-large"}} className="tour-listing-details__title tour-listing-details__overview-title display-4">
                             {data.heading_name}
                             </h1>
-                            <h5 style= {{color: '#13a5b6'}}>{data.sub_heading_name}</h5>
                             <div class="post-info post-info1" style={{marginBottom: '2px'}}>
                                   <div class="post-category post-category1"  >
                                       <div class="post-category__btn-group" >

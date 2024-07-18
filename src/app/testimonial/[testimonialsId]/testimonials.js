@@ -38,7 +38,7 @@ const TestimonialDetail = ({ dest }) => {
                 </div>
             </section>
             {loading ? <Loading /> :
-                <section className="mt-5">
+                <section className="mt-3">
                     <div className="container">
                         <div className="tour-listing-details__row row testdest">
                             <div className="col-xl-4 rightsidediv">
@@ -98,7 +98,7 @@ const TestimonialDetail = ({ dest }) => {
                 testimonial.testimonials_multiple_img !== null ?
 
                     (
-                        <section className="mt-5">
+                        <section className="mt-3">
                             <div className="container">
                                 <div className="tour-listing-details__row row">
 

@@ -44,7 +44,7 @@ const PackageDetail = ({ dest }) => {
                 </div>
             </section>
             {loading ? <Loading /> :
-                <section className="mt-5">
+                <section>
                     <div className="container">
                         {/* {data.map((item) => ( */}
                         <div className="tour-listing-details__row row testdest">

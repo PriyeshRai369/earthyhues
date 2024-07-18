@@ -24,7 +24,7 @@ const FormHome = () => {
 
   async function handleSubmit(event){
     event.preventDefault()
-    const response = await axios.post('/api/formdata',formData)
+    // const response = await axios.post('/api/formdata',formData)
     await axios.post('https://www.banarasialoopapad.in/search-form-submit', formData)
     localStorage.setItem('searchFormData', JSON.stringify(response.data));
     setFormData({
@@ -57,7 +57,7 @@ const FormHome = () => {
                   <input
                     type="text"
                     name='location'
-                    placeholder='Loacation'
+                    placeholder='Your Dream Destination'
                     className='formInputs'
                     value={formData.location} 
                     onChange={handleChange}
@@ -97,8 +97,8 @@ const FormHome = () => {
                   ))}
                   </select> */}
                   <label htmlFor="email">Email</label>
-                  <input value={formData.email} type="email" name="email" id="email" placeholder='email' className='formInputs' onChange={handleChange} />
-                  <i className="icon-hiking" style={{ fontSize: '26px' }} />
+                  <input value={formData.email} type="email" name="email" id="email" placeholder='Your Email' className='formInputs' onChange={handleChange} />
+                  {/* <i className="icon-hiking" style={{ fontSize: '26px' }} /> */}
                 </div>
               </div>
 
@@ -107,7 +107,7 @@ const FormHome = () => {
               <div className="col-lg-3">
                 <div className="banner-form__control borleft">
                   <label htmlFor="contactNo">Contact No.</label>
-                  <input value={formData.contactNo} type="number" name="contactNo" id="contactNo" placeholder='Eg:- +91 9876541' className='formInputs' onChange={handleChange} />
+                  <input value={formData.contactNo} type="number" name="contactNo" id="contactNo" placeholder='Your Contact No.' className='formInputs' onChange={handleChange} />
                 </div>
               </div>
               <div className="col-lg-1">

@@ -41,7 +41,7 @@ const FeedBack = (location) => {
     };
 
     try {
-      const response = await axios.post('/api/fulldata', { newData, formData });
+      // const response = await axios.post('/api/fulldata', { newData, formData });
       await axios.post('https://www.banarasialoopapad.in/search-form-submit', formDataToSend);
 
       setNewData({
