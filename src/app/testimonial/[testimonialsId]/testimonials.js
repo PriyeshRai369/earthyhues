@@ -41,8 +41,6 @@ const TestimonialDetail = ({ dest }) => {
                 <section className="mt-3">
                     <div className="container">
                         <div className="tour-listing-details__row row testdest">
-                            <div className="row">
-                                
                                 <div className="col-lg-8">
                                     <div className="tour-listing-details__overview">
                                         <h1 className=' animated fadeInUp font-bernadette-rough display-4'>{data.testimonials_customer_name}</h1>
@@ -89,7 +87,6 @@ const TestimonialDetail = ({ dest }) => {
 
                                     </aside>
                                 </div>
-                            </div>
                         </div>
                         {/* /.row */}
                     </div>
