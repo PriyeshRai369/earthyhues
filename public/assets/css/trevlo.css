@@ -6616,12 +6616,15 @@ body.megamenu-popup-active .mobile-nav__content {
   .page-header {
     padding: 70px 0;
   }
+
 }
 
 @media (min-width: 480px) and (max-width: 992px) {
   .page-header {
     padding: 140px 0 40px;
   }
+
+ 
 }
 
 .page-header__bg {
@@ -18553,4 +18556,16 @@ input::placeholder {
 }
 .blogImageContainer{
   float: right;
+}
+
+.main-menu .main-menu__list>li .linkShow{
+  display: none !important;
+}
+@media (max-width:1299px) {
+  .main-header--home-three .main-menu .main-menu__list>li .linkShow{
+    display: inline-block !important;
+  }
+  .mobile-nav__content .main-menu__list li .linkHide{
+    display: none !important;
+  }
 }
