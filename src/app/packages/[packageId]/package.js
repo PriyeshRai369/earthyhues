@@ -56,7 +56,7 @@ const PackageDetail = ({ dest }) => {
                                         data-wow-delay="0.1s"
                                         data-wow-duration="1500ms"
                                     >
-                                        <h3 className=" h1Title tour-listing-details__title tour-listing-details__overview-title font-bernadette-rough display-4">
+                                        <h3 className="tour-listing-details__overview-title font-bernadette-rough display-4">
                                             {/* Spectacles of the Thar */}
                                             {data.package_title}
                                         </h3>

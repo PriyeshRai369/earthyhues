@@ -82,7 +82,7 @@ function Blog() {
                   // left: 23
                   marginBottom: "20px"
                 }}>
-                <span className="font-bernadette-rough display-4" style={{ fontSize: 51 }}>
+                <span className="font-bernadette-rough display-4">
                   Travel Blog
                 </span>
                 <div className='searchSection'>

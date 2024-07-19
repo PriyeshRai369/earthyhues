@@ -104,7 +104,7 @@ const Passion = ({ dest }) => {
                                             fontSize: "25px!important",
                                             marginBottom: "10px"
                                         }}>
-                                        <span className="font-bernadette-rough display-4" style={{ fontSize: 51 }}>
+                                        <span className="font-bernadette-rough display-4">
                                             {data.passion_name}
                                         </span>
                                         
