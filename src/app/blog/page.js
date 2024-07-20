@@ -138,13 +138,12 @@ function Blog() {
                           ))}
                         </ul>
                       </div>
-                      <div
+                      {/* <div
                         className="sidebar-blog__single sidebar-blog__single--tags wow animated fadeInUp"
                         data-wow-delay="0.3s"
                         data-wow-duration="1500ms"
                       >
                         <h4 className="sidebar-blog__title">Tags</h4>
-                        {/* /.sidebar-blog__title */}
                         <div className="sidebar-blog__tags">
                           <a
 
@@ -171,14 +170,15 @@ function Blog() {
                             <span>Tourism</span>
                           </a>
                         </div>
-                      </div>
+                      </div> */}
                     </aside>
                   </div>
                 </div>}
                 {!filteredData.length ? <NotFoundLoader/>:
                 <div className="col-xl-8 col-lg-7">
                   {filteredData.map((item) => (
-                    <div id={`blog-${item.blog_id}`} className="sidebar-blog__single--search mb-5 blog_list mt-5" key={item.blog_id}>
+                    
+                    <div id={`blog-${item.blog_id}`} className="sidebar-blog__single--search mb-5 blog_list" key={item.blog_id}>
                       <Link href={`/blog/${item.blog_url}`} onClick={scrollToTop}>
                         <div className="blog-details">
                           <div className="blog-card-three ">

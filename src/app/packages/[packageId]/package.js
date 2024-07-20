@@ -64,13 +64,13 @@ const PackageDetail = ({ dest }) => {
                                     <div className="col-xl-4 rightsidediv imgContainer">
                                         <div id="carouselExampleAutoplaying" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                             <div class="carousel-inner">
-                                                <div class="carousel-item active">
+                                                <div class="carousel-item active" data-bs-interval="2000">
                                                     <img src={data.package_img} class="d-block" alt="..." />
                                                 </div>
-                                                <div class="carousel-item">
+                                                <div class="carousel-item" data-bs-interval="2000">
                                                     <img src={data.gallery?.[0]?.large_image} class="d-block" alt="..." />
                                                 </div>
-                                                <div class="carousel-item">
+                                                <div class="carousel-item" data-bs-interval="2000">
                                                     <img src={data.gallery?.[1]?.large_image} class="d-block" alt="..." />
                                                 </div>
                                             </div>
