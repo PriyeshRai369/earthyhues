@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import Link from 'next/link';
+import CardLoader from '../CardLoader/CardLoader';
 
 const TripData = () => {
     const [data, setData] = useState([])
@@ -33,6 +34,13 @@ const TripData = () => {
             </div>
             <section className="tour-type-two home_page">
                 <div className="container">
+                    {   !data.length ?  
+                    <section className='row justify-content-center'>
+                        <CardLoader />
+                        <CardLoader />
+                        <CardLoader />
+                    </section>
+                    :
                     <div className="row justify-content-md-center">
                         {data.map((item) => (
                             <div className="col-lg-4 col-md-6 col-sm-12 wow fadeInUp mb-5" data-wow-delay="100ms" key={item.dnid}>
@@ -58,7 +66,7 @@ const TripData = () => {
                                 </Link>
                             </div>
                         ))}
-                    </div>
+                    </div>}
                 </div>
             </section>
         </div>
