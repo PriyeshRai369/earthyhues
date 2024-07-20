@@ -55,8 +55,8 @@ export default function Home() {
                   <div className="tour-type__box__icon ">
                     {/* <span className="icon-windsurfing-2" /> */}
                     {/* <div className="tourIcon"></div> */}
-                    <img src="assets/images/icon/2.png" alt="" className="default"/>
-                    <img src="assets/images/icon/1.png" alt="" className="hover"/>
+                    <img src="assets/images/icon/1.png" alt="" className="default"/>
+                    <img src="assets/images/icon/2.png" alt="" className="hover"/>
                   </div>
                   <h3 className="tour-type__box__title">Family Vacation</h3>
                 </div>

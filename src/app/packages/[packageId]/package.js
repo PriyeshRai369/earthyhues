@@ -84,7 +84,7 @@ const PackageDetail = ({ dest }) => {
                                             </button>
                                         </div>
                                     </div>
-                                    <h1 className='pageHeading animated fadeInUp'>{data.package_title}Travel Package by EarthyHues</h1>
+                                    <h1 className='pageHeading animated fadeInUp'>{data.package_title} Travel Package by EarthyHues</h1>
                                     <p
                                         className="tour-listing-details__overview-text wow animated fadeInUp"
                                         data-wow-delay="0.1s"

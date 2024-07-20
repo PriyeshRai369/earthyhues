@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios';
 import Loading from '@/components/Loading/Loading';
 import Link from 'next/link';
+import NotFoundLoader from '@/components/NotFoundLoader/NotFoundLoader';
 
 function Blog() {
   const [data, setData] = useState([]);
@@ -47,6 +48,8 @@ function Blog() {
     setSelectedBlogId(blogId);
   };
 
+  // console.log(filteredData.length);
+  // console.log(filteredData);
 
   return (
     <div>
@@ -91,6 +94,7 @@ function Blog() {
                 </div>
               </h3>
               <div className="row">
+              {!filteredData.length ? "":
                 <div className="col-xl-4 col-lg-5">
                   <div className="sidebar-blog sidebar-blog--left">
                     <aside className="widget-area">
@@ -113,7 +117,7 @@ function Blog() {
                       >
                         <h4 className="sidebar-blog__title">Latest posts</h4>
                         <ul className="sidebar-blog__posts ">
-                          {data.map((item) => (
+                          {filteredData.map((item) => (
                             <li className="sidebar-blog__posts-item" key={item.blog_id}>
                               <div className="sidebar-blog__posts-image">
                                 <img
@@ -168,8 +172,8 @@ function Blog() {
                       </div>
                     </aside>
                   </div>
-                </div>
-
+                </div>}
+                {!filteredData.length ? <NotFoundLoader/>:
                 <div className="col-xl-8 col-lg-7">
                   {filteredData.map((item) => (
                     <div id={`blog-${item.blog_id}`} className="sidebar-blog__single--search mb-5 blog_list mt-5" key={item.blog_id}>
@@ -229,7 +233,7 @@ function Blog() {
                     </div>
                   ))}
                   {/* /.col-xl-8 col-lg-7 */}
-                </div>
+                </div>}
                 {/* /.row */}
               </div>
             </div>

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import Loading from '@/components/Loading/Loading';
+import NotFoundLoader from '@/components/NotFoundLoader/NotFoundLoader';
 
 function Packages() {
     const [data, setData] = useState([]);
@@ -117,6 +118,8 @@ function Packages() {
                                     </select>
                                 </div>
                             </h3>
+                            {!filteredData.length ? <NotFoundLoader/>:
+                            <>
                             {filteredData.map((packageData) => (
                                 <div className="col-lg-4" key={packageData.package_id}>
                                     <Link href={`/packages/${packageData.package_url}`} onClick={scrollToTop}>
@@ -136,7 +139,7 @@ function Packages() {
                                         </div>
                                     </Link>
                                 </div>
-                            ))}
+                            ))}</>}
                         </div>
                     </div>
                 </section>}
