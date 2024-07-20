@@ -18469,7 +18469,7 @@ iframe.youtubeVideo {
   background-color: #f3f3f3;
   border-radius: 30px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  padding: 3px 50px 3px 15px;
+  padding: 3px 28px 3px 42px;
   display: flex;
 
   input{
@@ -18484,8 +18484,9 @@ iframe.youtubeVideo {
     position: absolute;
     width: 25px;
     height: 25px;
-    right: 15px;
     top: 10px;
+    left: 12px;
+
 
   }
 }
@@ -18568,4 +18569,15 @@ input::placeholder {
   .mobile-nav__content .main-menu__list li .linkHide{
     display: none !important;
   }
+}
+
+.clearText{
+  position: absolute;
+  color: #06a3b7;
+  right: 16px;
+  font-size: 18px;
+  top: 46%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: all .3s;
 }
