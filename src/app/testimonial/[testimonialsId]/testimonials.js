@@ -41,7 +41,7 @@ const TestimonialDetail = ({ dest }) => {
                 <section className="mt-3">
                     <div className="container">
                         <div className="tour-listing-details__row row testdest">
-                                <div className="col-lg-8">
+                                <div className="col-lg-8" style={{float:"left"}}>
                                     <div className="tour-listing-details__overview">
                                         <h1 className=' animated fadeInUp font-bernadette-rough display-4'>{data.testimonials_customer_name}</h1>
                                         <div
@@ -72,7 +72,7 @@ const TestimonialDetail = ({ dest }) => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-4">
+                                <div className="col-lg-4" style={{float:"right"}}>
                                     <aside className="tour-listing-details__sidebar">
                                         <div className="tour-listing-details__sidebar-book-tours tour-listing-details__sidebar-single wow animated fadeInUp text-center "
                                             data-wow-delay="0.1s" data-wow-duration="1500ms">

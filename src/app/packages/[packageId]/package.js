@@ -232,8 +232,8 @@ const PackageDetail = ({ dest }) => {
                                 <h3 className="tour-listing-details__title tour-listing-details__amenities-title">Gallery</h3>
                                 <div className="row">
                                     {data && data.gallery && data.gallery.map((items) => (
-                                        <div className="col-lg-2 col-ms-2">
-                                            <img src={items.small_image} alt={items.alt} className='w-100 h-100 ' />
+                                        <div className="col-lg-4 col-ms-4">
+                                            <img src={items.large_image} alt={items.alt} className='w-100 h-100 ' />
                                         </div>
                                     ))}
                                 </div>
