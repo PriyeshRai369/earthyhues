@@ -23,10 +23,8 @@ const FeedBack = (location) => {
 
   useEffect(() => {
     const storedData = JSON.parse(localStorage.getItem('searchFormData'));
-    if (storedData && storedData.data) {
-      setFormData(storedData.data);
-      // console.log(storedData.data);
-    }
+    setFormData(storedData?.[0]);
+    // console.log(storedData[0].location);
   }, []);
 
 
@@ -42,7 +40,7 @@ const FeedBack = (location) => {
 
     try {
       // const response = await axios.post('/api/fulldata', { newData, formData });
-      await axios.post('https://www.banarasialoopapad.in/search-form-submit', formDataToSend);
+      const response = await axios.post('https://www.earthyhues.co.in/search-form-submit', formDataToSend);
 
       setNewData({
         name: "",
