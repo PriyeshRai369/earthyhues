@@ -3,6 +3,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import SocialMedia from "@/components/SocialMedia/SocialMedia";
 import jQuery from "jquery";
+import Script from "next/script";
 
 export const metadata = {
   title: "World's best Nature Travel Experience | Earthy Hues",
@@ -102,7 +103,7 @@ export default function RootLayout({ children }) {
         <script src="../assets/vendors/bootstrap-select/bootstrap-select.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="../assets/js/earthyhues.js"></script>
-        <script
+        {/* <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0XBFGE00CF"
         ></script>
@@ -110,7 +111,23 @@ export default function RootLayout({ children }) {
           window.dataLayer = window.dataLayer || []; function gtag()
           {dataLayer.push(arguments)}
           gtag('js', new Date()); gtag('config', 'G-0XBFGE00CF');
-        </script>
+        </script> */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-0XBFGE00CF"
+          strategy="afterInteractive"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-0XBFGE00CF');
+            `,
+          }}
+        />
       </body>
     </html>
   );
