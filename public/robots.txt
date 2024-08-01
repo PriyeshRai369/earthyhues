@@ -1,3 +1,9 @@
-# https://www.robotstxt.org/robotstxt.html
+# *
 User-agent: *
-Disallow:
+Allow: /
+
+# Host
+Host: https://earthyhues-sage.vercel.app/
+
+# Sitemaps
+Sitemap: https://earthyhues-sage.vercel.app/sitemap.xml
